@@ -1,10 +1,10 @@
-# require 'activerecord_activity_tracker/activerecord_activity'
-require 'activerecord_activity_tracker/owner'
+# require 'activitia_activity_tracker/activitia_activity'
+require 'activitia_activity_tracker/owner'
 
-module ActiverecordActivityTracker
+module activitiaActivityTracker
   module ActsAsTrackable
     extend ActiveSupport::Concern
-    include ActiverecordActivityTracker::Owner
+    include activitiaActivityTracker::Owner
 
     class_methods do
       def acts_as_trackable(tracked = [:create, :update])

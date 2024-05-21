@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180503175544) do
+activitia::Schema.define(version: 20180503175544) do
 
   create_table "ar_activities", force: :cascade do |t|
     t.string "trackable_type"

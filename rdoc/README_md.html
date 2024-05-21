@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>README - ActiverecordActivityTracker</title>
+<title>README - activitiaActivityTracker</title>
 
 <script type="text/javascript">
   var rdoc_rel_prefix = "./";
@@ -56,7 +56,7 @@
   <h3>Table of Contents</h3>
 
   <ul class="link-list" role="directory">
-    <li><a href="#label-ActiverecordActivityTracker">ActiverecordActivityTracker</a>
+    <li><a href="#label-activitiaActivityTracker">activitiaActivityTracker</a>
     <li><a href="#label-Features">Features</a>
     <li><a href="#label-Usage">Usage</a>
     <li><a href="#label-Track+a+model">Track a model</a>
@@ -71,8 +71,8 @@
     <li><a href="#label-Installation">Installation</a>
     <li><a href="#label-Setup">Setup</a>
     <li><a href="#label-Documentation+-2F+API">Documentation / API</a>
-    <li><a href="#label-ActiverecordActivityTracker-3A-3AActsAsTrackable">ActiverecordActivityTracker::ActsAsTrackable</a>
-    <li><a href="#label-ActiverecordActivityTracker-3A-3AOwner">ActiverecordActivityTracker::Owner</a>
+    <li><a href="#label-activitiaActivityTracker-3A-3AActsAsTrackable">activitiaActivityTracker::ActsAsTrackable</a>
+    <li><a href="#label-activitiaActivityTracker-3A-3AOwner">activitiaActivityTracker::Owner</a>
     <li><a href="#label-ArActivityTracker">ArActivityTracker</a>
     <li><a href="#label-Description">Description</a>
     <li><a href="#label-Data+structure">Data structure</a>
@@ -99,10 +99,10 @@
 
 <main role="main" aria-label="Page README.md">
 
-<h1 id="label-ActiverecordActivityTracker"><a href="ActiverecordActivityTracker.html">ActiverecordActivityTracker</a><span><a href="#label-ActiverecordActivityTracker">&para;</a> <a href="#top">&uarr;</a></span></h1>
+<h1 id="label-activitiaActivityTracker"><a href="activitiaActivityTracker.html">activitiaActivityTracker</a><span><a href="#label-activitiaActivityTracker">&para;</a> <a href="#top">&uarr;</a></span></h1>
 
-<p><code>activerecord_activity_tracker</code> provides simple yet powerful
-activity tracker for your Rails <strong>ActiveRecord</strong> models.</p>
+<p><code>activitia_activity_tracker</code> provides simple yet powerful
+activity tracker for your Rails <strong>activitia</strong> models.</p>
 
 <p>This gem will allows you to create the data model for social <strong>news
 feed</strong> used in many modern platform in no time.</p>
@@ -125,7 +125,7 @@ controllers provided.</p>
 
 <h3 id="label-Track+a+model">Track a model<span><a href="#label-Track+a+model">&para;</a> <a href="#top">&uarr;</a></span></h3>
 <ul><li>
-<p>Include <code>ActiverecordActivityTracker::ActsAsTrackable</code></p>
+<p>Include <code>activitiaActivityTracker::ActsAsTrackable</code></p>
 </li><li>
 <p>For automatic tracking add <code>acts_as_trackable</code></p>
 </li><li>
@@ -134,7 +134,7 @@ controllers provided.</p>
 
 <h3 id="label-Set+default+owner+-28user-29">Set default owner (user)<span><a href="#label-Set+default+owner+-28user-29">&para;</a> <a href="#top">&uarr;</a></span></h3>
 <ul><li>
-<p>Include <code>ActiverecordActivityTracker::Owner</code></p>
+<p>Include <code>activitiaActivityTracker::Owner</code></p>
 </li><li>
 <p>To set the owner use <code>set_owner(current_user)</code></p>
 </li><li>
@@ -149,7 +149,7 @@ default owner example</a></p>
 
 <h3 id="label-Access+model-27s+tracked+activities">Access model&#39;s tracked activities<span><a href="#label-Access+model-27s+tracked+activities">&para;</a> <a href="#top">&uarr;</a></span></h3>
 <ul><li>
-<p>Include <code>ActiverecordActivityTracker::ActsAsTrackable</code></p>
+<p>Include <code>activitiaActivityTracker::ActsAsTrackable</code></p>
 </li><li>
 <p>Use <code>ar_activities</code></p>
 </li></ul>
@@ -160,7 +160,7 @@ default owner example</a></p>
 
 <pre class="ruby"><span class="ruby-comment"># app/models/comment.rb</span>
 <span class="ruby-keyword">class</span> <span class="ruby-constant">Comment</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">ApplicationRecord</span>
-  <span class="ruby-identifier">include</span> <span class="ruby-constant">ActiverecordActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
+  <span class="ruby-identifier">include</span> <span class="ruby-constant">activitiaActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
 
   <span class="ruby-identifier">acts_as_trackable</span> [:<span class="ruby-identifier">create</span>]
 <span class="ruby-keyword">end</span>
@@ -170,7 +170,7 @@ default owner example</a></p>
 
 <pre class="ruby"><span class="ruby-comment"># app/models/comment.rb</span>
 <span class="ruby-keyword">class</span> <span class="ruby-constant">Comment</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">ApplicationRecord</span>
-  <span class="ruby-identifier">include</span> <span class="ruby-constant">ActiverecordActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
+  <span class="ruby-identifier">include</span> <span class="ruby-constant">activitiaActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
 
   <span class="ruby-identifier">acts_as_trackable</span> [:<span class="ruby-identifier">create</span>, :<span class="ruby-identifier">update</span>]
 <span class="ruby-keyword">end</span>
@@ -180,7 +180,7 @@ default owner example</a></p>
 
 <pre class="ruby"><span class="ruby-comment"># app/models/comment.rb</span>
 <span class="ruby-keyword">class</span> <span class="ruby-constant">Comment</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">ApplicationRecord</span>
-  <span class="ruby-identifier">include</span> <span class="ruby-constant">ActiverecordActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
+  <span class="ruby-identifier">include</span> <span class="ruby-constant">activitiaActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">ActsAsTrackable</span>
 
   <span class="ruby-identifier">after_update</span> :<span class="ruby-identifier">add_title_change_activity</span>
     
@@ -200,7 +200,7 @@ used, not just user.</p>
 
 <pre class="ruby"><span class="ruby-comment"># app/controllers/application_controller.rb</span>
 <span class="ruby-keyword">class</span> <span class="ruby-constant">ApplicationController</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">ActionController</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>
-  <span class="ruby-identifier">include</span> <span class="ruby-constant">ActiverecordActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">Owner</span>
+  <span class="ruby-identifier">include</span> <span class="ruby-constant">activitiaActivityTracker</span><span class="ruby-operator">::</span><span class="ruby-constant">Owner</span>
 
   <span class="ruby-identifier">protect_from_forgery</span> <span class="ruby-identifier">with</span><span class="ruby-operator">:</span> :<span class="ruby-identifier">exception</span>
 
@@ -231,24 +231,24 @@ used, not just user.</p>
 
 <p>Add this line to your application&#39;s Gemfile:</p>
 
-<pre class="ruby"><span class="ruby-identifier">gem</span> <span class="ruby-string">&#39;activerecord_activity_tracker&#39;</span>
+<pre class="ruby"><span class="ruby-identifier">gem</span> <span class="ruby-string">&#39;activitia_activity_tracker&#39;</span>
 </pre>
 
 <p>And then execute: <code>bash $ bundle </code></p>
 
 <p>Or install it yourself as: <code>bash $ gem install
-activerecord_activity_tracker </code></p>
+activitia_activity_tracker </code></p>
 
 <h3 id="label-Setup">Setup<span><a href="#label-Setup">&para;</a> <a href="#top">&uarr;</a></span></h3>
 
 <p>Execute this line in your application&#39;s directory: <code>bash $ rails
-generate activerecord_activity_tracker:install </code></p>
+generate activitia_activity_tracker:install </code></p>
 
 <p>And then execute: <code>bash $ rails db:migrate </code></p>
 
 <h3 id="label-Documentation+-2F+API">Documentation / API<span><a href="#label-Documentation+-2F+API">&para;</a> <a href="#top">&uarr;</a></span></h3>
 
-<h4 id="label-ActiverecordActivityTracker-3A-3AActsAsTrackable"><a href="ActiverecordActivityTracker/ActsAsTrackable.html">ActiverecordActivityTracker::ActsAsTrackable</a><span><a href="#label-ActiverecordActivityTracker-3A-3AActsAsTrackable">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<h4 id="label-activitiaActivityTracker-3A-3AActsAsTrackable"><a href="activitiaActivityTracker/ActsAsTrackable.html">activitiaActivityTracker::ActsAsTrackable</a><span><a href="#label-activitiaActivityTracker-3A-3AActsAsTrackable">&para;</a> <a href="#top">&uarr;</a></span></h4>
 <ul><li>
 <p><code>acts_as_trackable(tracked = [:create, :update]) =&gt; nil</code>
 Overview: Track model automatically.</p>
@@ -273,7 +273,7 @@ to <code>create_ar_activity</code> but allows duplication.</p>
 Overview: Handle activities&#39; relations.</p>
 </li></ul>
 
-<h4 id="label-ActiverecordActivityTracker-3A-3AOwner"><a href="ActiverecordActivityTracker/Owner.html">ActiverecordActivityTracker::Owner</a><span><a href="#label-ActiverecordActivityTracker-3A-3AOwner">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<h4 id="label-activitiaActivityTracker-3A-3AOwner"><a href="activitiaActivityTracker/Owner.html">activitiaActivityTracker::Owner</a><span><a href="#label-activitiaActivityTracker-3A-3AOwner">&para;</a> <a href="#top">&uarr;</a></span></h4>
 <ul><li>
 <p><code>get_owner() =&gt; owner (active_record_model or nil)</code> Overview:
 Get the current owner</p>
@@ -311,7 +311,7 @@ and modification activities respectively.</p>
 <h2 id="label-Contributing">Contributing<span><a href="#label-Contributing">&para;</a> <a href="#top">&uarr;</a></span></h2>
 <ol><li>
 <p>Fork it ( <a
-href="https://github.com/mudafar/activerecord_activity_tracker/fork">github.com/mudafar/activerecord_activity_tracker/fork</a>
+href="https://github.com/mudafar/activitia_activity_tracker/fork">github.com/mudafar/activitia_activity_tracker/fork</a>
 )</p>
 </li><li>
 <p>Create your feature branch (<code>git checkout -b my-new-feature</code>)</p>

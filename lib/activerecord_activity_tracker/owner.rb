@@ -1,18 +1,18 @@
-require 'activerecord_activity_tracker/current_owner'
+require 'activitia_activity_tracker/current_owner'
 
-module ActiverecordActivityTracker
+module activitiaActivityTracker
   module Owner
 
     def get_owner
-      ActiverecordActivityTracker::CurrentOwner.owner
+      activitiaActivityTracker::CurrentOwner.owner
     end
 
     def set_owner(owner)
-      ActiverecordActivityTracker::CurrentOwner.owner = owner
+      activitiaActivityTracker::CurrentOwner.owner = owner
     end
 
     def clear_owner
-      ActiverecordActivityTracker::CurrentOwner.owner = nil
+      activitiaActivityTracker::CurrentOwner.owner = nil
     end
 
   end

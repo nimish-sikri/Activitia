@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class TestActsAsTrackable < ActiveSupport::TestCase
-  include ActiverecordActivityTracker::Owner
+  include activitiaActivityTracker::Owner
 
   def setup
     set_owner(Post.create(title: 'test_post_title'))

@@ -1,13 +1,13 @@
-require 'generators/activerecord_activity_tracker'
+require 'generators/activitia_activity_tracker'
 require 'rails/generators/active_record'
 
-module ActiverecordActivityTracker
+module activitiaActivityTracker
   module Generators
     # Migration generator that creates migration file from template
-    class InstallGenerator < ActiveRecord::Generators::Base
+    class InstallGenerator < activitia::Generators::Base
       extend Base
 
-      argument :name, type: :string, default: 'create_activerecord_activities'
+      argument :name, type: :string, default: 'create_activitia_activities'
 
       def generate_model
         Rails::Generators.invoke('active_record:model',

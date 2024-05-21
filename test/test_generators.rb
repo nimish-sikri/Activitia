@@ -1,10 +1,10 @@
 require 'test_helper'
 require 'rails/generators/test_case'
-require 'generators/activerecord_activity_tracker/install/install_generator'
+require 'generators/activitia_activity_tracker/install/install_generator'
 
 
 class TestInstallGenerator < Rails::Generators::TestCase
-  tests ActiverecordActivityTracker::Generators::InstallGenerator
+  tests activitiaActivityTracker::Generators::InstallGenerator
   destination File.expand_path('../tmp', File.dirname(__FILE__))
   setup :prepare_destination
 

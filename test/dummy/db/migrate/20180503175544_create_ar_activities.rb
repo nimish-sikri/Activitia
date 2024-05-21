@@ -1,4 +1,4 @@
-class CreateArActivities < ActiveRecord::Migration[5.1]
+class CreateArActivities < activitia::Migration[5.1]
   def change
     create_table :ar_activities do |t|
       t.references :trackable, polymorphic: true

@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "activerecord_activity_tracker"
+require "activitia_activity_tracker"
 
 module Dummy
   class Application < Rails::Application

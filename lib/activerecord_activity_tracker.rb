@@ -1,7 +1,7 @@
-require 'activerecord_activity_tracker/acts_as_trackable'
-require 'activerecord_activity_tracker/owner'
+require 'activitia_activity_tracker/acts_as_trackable'
+require 'activitia_activity_tracker/owner'
 
-module ActiverecordActivityTracker
+module activitiaActivityTracker
 
 
 end

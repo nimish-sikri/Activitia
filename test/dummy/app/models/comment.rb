@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  include ActiverecordActivityTracker::ActsAsTrackable
+  include activitiaActivityTracker::ActsAsTrackable
 
   acts_as_trackable([:create, :update])
 end

@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  include ActiverecordActivityTracker::Owner
+  include activitiaActivityTracker::Owner
 
   protect_from_forgery with: :exception
 
